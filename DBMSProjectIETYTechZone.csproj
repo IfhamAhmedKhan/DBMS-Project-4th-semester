@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{15C611C5-2AED-4F98-82A2-3E94940007B2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DBMSProjectIETYTechZone</RootNamespace>
+    <AssemblyName>DBMSProjectIETYTechZone</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.RunTime.1.2.0.3\lib\net40-Client\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Design.1.2.0.3\lib\net40\MetroFramework.Design.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Fonts.1.2.0.3\lib\net40\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BuyProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuyProduct.Designer.cs">
+      <DependentUpon>BuyProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gamingdesktop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gamingdesktop.Designer.cs">
+      <DependentUpon>gamingdesktop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GamingLaptop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GamingLaptop.Designer.cs">
+      <DependentUpon>GamingLaptop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GamingMouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GamingMouse.Designer.cs">
+      <DependentUpon>GamingMouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GraphicCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GraphicCard.Designer.cs">
+      <DependentUpon>GraphicCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Keyboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Keyboard.Designer.cs">
+      <DependentUpon>Keyboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainPage.Designer.cs">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Monitors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Monitors.Designer.cs">
+      <DependentUpon>Monitors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewAccount.Designer.cs">
+      <DependentUpon>NewAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BuyProduct.resx">
+      <DependentUpon>BuyProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gamingdesktop.resx">
+      <DependentUpon>gamingdesktop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GamingLaptop.resx">
+      <DependentUpon>GamingLaptop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GamingMouse.resx">
+      <DependentUpon>GamingMouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraphicCard.resx">
+      <DependentUpon>GraphicCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Keyboard.resx">
+      <DependentUpon>Keyboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainPage.resx">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Monitors.resx">
+      <DependentUpon>Monitors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewAccount.resx">
+      <DependentUpon>NewAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MetroFramework.txt" />
+    <None Include="Resources\gc3info.PNG" />
+    <None Include="Resources\gc2info.PNG" />
+    <None Include="Resources\gc1info.PNG" />
+    <None Include="Resources\gc3.PNG" />
+    <None Include="Resources\gc2.PNG" />
+    <None Include="Resources\gc1.PNG" />
+    <None Include="Resources\monitor2price.PNG" />
+    <None Include="Resources\monitor1price.PNG" />
+    <None Include="Resources\monitor2.PNG" />
+    <None Include="Resources\monitor1.PNG" />
+    <None Include="Resources\mouse2info.PNG" />
+    <None Include="Resources\mouse2.PNG" />
+    <None Include="Resources\mouse1info.PNG" />
+    <None Include="Resources\mouse1.PNG" />
+    <None Include="Resources\desktop1price.PNG" />
+    <None Include="Resources\desktop1info.PNG" />
+    <None Include="Resources\desktop2price.PNG" />
+    <None Include="Resources\desktop2info.PNG" />
+    <None Include="Resources\desktop3info.PNG" />
+    <None Include="Resources\desktop3price.PNG" />
+    <None Include="Resources\desktop3.PNG" />
+    <None Include="Resources\desktop2.PNG" />
+    <None Include="Resources\desktop1.PNG" />
+    <None Include="Resources\keyboard2info.jpg" />
+    <None Include="Resources\keyboard2.jpg" />
+    <None Include="Resources\keyboard11.jpg" />
+    <None Include="Resources\keyboard1info.jpg" />
+    <None Include="Resources\keyboard1.jpg" />
+    <None Include="Resources\laptop3price1.PNG" />
+    <None Include="Resources\laptop2price1.PNG" />
+    <None Include="Resources\laptop1price1.PNG" />
+    <None Include="Resources\laptop3price.PNG" />
+    <None Include="Resources\laptop2price.PNG" />
+    <None Include="Resources\laptop1price.PNG" />
+    <None Include="Resources\laptop3info.PNG" />
+    <None Include="Resources\laptop2info.PNG" />
+    <None Include="Resources\laptop1info.PNG" />
+    <None Include="Resources\laptop3.PNG" />
+    <None Include="Resources\laptop2.PNG" />
+    <None Include="Resources\laptop1.PNG" />
+    <None Include="Resources\logout.png" />
+    <None Include="Resources\gamingmonitors.jpg" />
+    <None Include="Resources\gamingdesktop.jpg" />
+    <None Include="Resources\gamingmouse.jpg" />
+    <None Include="Resources\graphiccard.jpg" />
+    <None Include="Resources\gaminglaptop.jpg" />
+    <None Include="Resources\keyboards.jpg" />
+    <None Include="Resources\169040.png" />
+    <None Include="Resources\19008781.jpg" />
+    <None Include="Resources\31631915371lyniu2zkjrlmbmhkqxc9kvtfx68cnz2xlt2rjuj76epxi2rwewm7g83rnuzcvyqnedbb3dxjrxiqtvtbdegg7gqjqanaebkz3zb4.png" />
+    <None Include="Resources\1900878.jpg" />
+    <None Include="Resources\585e4bf3cb11b227491c339a.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
